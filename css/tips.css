@@ -1,0 +1,170 @@
+/* Tips Page Styles */
+body{
+    background-image: url("../assets/images/background.plants.png");
+    background-repeat: no-repeat;
+    background-position: center top 120px; /* pushes image down by 80px */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.3);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: 2rem;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 1rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 960px;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.3s ease-in-out;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #2e7d32;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover {
+    color: #1f3521;
+  }
+  
+
+.tips-hero {
+    background: radial-gradient(120% 100% at 10% 20%, #d8e9cb 0%, #f4f7f0 80%);
+    padding: 2rem 1rem 4rem;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    top: -10px;
+  }
+  
+  .tips-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    color: #1F3521;
+    margin-bottom: 1rem;
+  }
+  
+  .tips-hero p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tips-categories{
+    padding-bottom: 40px;
+  }
+  
+  .tips-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .tips-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  }
+  
+  .tips-card h2 {
+    font-size: 1.2rem;
+    color: #3C3C3C;
+    margin-bottom: 12px;
+  }
+  
+  .tips-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  
+  .detailed-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+  
+  .plant-img-vertical {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+  }
+  
+  .plant-img-horizontal {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+  }
+  
+  .text-box {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .header-container {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .header-container h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--green-accent);
+  }
+
+  /* Image sizing inside detail modal */
+  .plant-img-horizontal {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+  .plant-img-vertical {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  
+  
