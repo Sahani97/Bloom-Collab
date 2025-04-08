@@ -1,0 +1,135 @@
+/* style.css — Global Styles */
+
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('../assets/fonts/BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* 1. Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Lexend', sans-serif;
+    line-height: 1.6;
+    color: #2E2E2E;
+    background-color: #F3F1E7;
+  }
+  
+  /* 2. Typography */
+  h1, h2, h3, h4 {
+    color: #316334;
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* 3. Layout & Containers */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* 4. Navbar */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+  }
+  
+  #logo-bloom {
+    height: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #388E3C;
+  }
+  
+  /* 5. Buttons */
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #388E3C;
+  }
+
+
+  
+  /* 6. Footer */
+  footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #E0E0E0;
+  }
+  
+  /* 7. Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  

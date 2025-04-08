@@ -1,0 +1,183 @@
+/* index.css — Homepage Styling */
+:root {
+  --green-main: #7B9C66;
+  --green-accent: #5D704D;
+  --green-muted: #A1B48A;
+  --green-blob: #C9DBC5;
+  --text-dark: #3C3C3C;
+  --bg-main: #F8F9F5;
+}
+
+
+.hero {
+  width: 1910px;
+  margin-left: calc(-1 * (100vw - 100%)/2);
+  background: radial-gradient(120% 100% at 10% 20%, #d8e9cb 0%, #f4f7f0 80%);
+  overflow: hidden;
+  padding: 10px 80px 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.background-blob,
+.background-blob2,
+.background-blob3 {
+  position: absolute;
+  opacity: 0.2;
+  z-index: -5;
+}
+
+/* Large top-left blob */
+.background-blob {
+  width: 1200px;
+  height: 400px;
+  background: var(--green-main);
+  opacity: 0.1;
+  top: -100px;
+  left: -100px;
+  border-radius: 60% 40% 40% 50% / 50% 60% 40% 50%;
+}
+
+/* Right side blob */
+.background-blob2 {
+  width: 350px;
+  height: 250px;
+  background: var(--green-blob);
+  top: 10px;
+  right: -120px;
+  border-radius: 30% 70% 60% 40% / 40% 30% 70% 60%;
+}
+
+/* Bottom-center blob */
+/* Replace background-blob3 with a longer, organic shape */
+.background-blob3 {
+  width: 500px;
+  height: 300px;
+  background: var(--green-blob);
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  opacity: 0.1;
+  z-index: 0;
+
+  border-radius: 64% 36% 54% 46% / 59% 58% 42% 41%;
+}
+
+
+/* Add a fifth blob (bottom left) */
+.background-blob4 {
+  width: 360px;
+  height: 220px;
+  background: var(--green-accent);
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: 0;
+
+  border-radius: 70% 30% 40% 60% / 50% 60% 40% 50%;
+}
+
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 1000px;
+}
+
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  color: #1F3521;
+  font-size: 3.8rem;
+}
+
+
+.hero-text .brand {
+  font-family: 'Brittany Signature', cursive;
+  color: #6F8D5B;
+  font-size: 3.6rem;
+}
+
+.hero-gallery {
+  position: relative;
+  display: flex;
+  float: right;
+  padding-right: 70px;
+  padding-top: 40px;
+}
+
+.hero-img.side-img {
+  width: 250px;
+  height: auto;
+}
+
+
+.selling-points {
+  display: flex;
+  gap: 2rem;
+  margin-top: 140px;
+  padding-right: 120px;
+  z-index: 1;
+}
+
+.card {
+  flex: 1 1 calc(33.3% - 1.5rem);
+  min-width: 400px;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  color: #2E7D32;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.plant-sticker {
+  height: 80px;
+  display: flex;
+  position: relative;
+}
+
+.hero-image {
+  position: relative;
+  right: -150px;
+  top: 50px;   /* bring it visually above the blob */
+  height: 300px;
+  z-index: 1;    /* ensures it appears above the blob */
+}
+
+
+.small-blob {
+  width: 300px;
+  height: 350px;
+  right: -180px;
+  background: var(--green-blob);
+  border-radius: 60% 40% 30% 70% / 50% 40% 60% 50%;
+  position: absolute;
+  z-index: -2;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
