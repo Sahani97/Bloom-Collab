@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom | Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <script src="js/shop.js" defer></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/images/logo.png" id="logo-bloom" alt="Logo of the website saying Bloom"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-section">
+      <div class="shop-header">
+        <h1>Shop</h1>
+        <div class="shop-controls">
+          <div id="categoryFilter">
+            <button data-category="all" class="active">All</button>
+            <button data-category="beginner">Beginner Plants</button>
+            <button data-category="longlasting">Long Lasting Plants</button>
+            <button data-category="lowlight">Low Sunlight Plants</button>
+            <button data-category="droughtresistant">Drought-resistant Plants</button>
+          </div>
+
+          <select id="sortFilter">
+            <option value="default">Feature</option>
+            <option value="lowtohigh">Price - Low to High</option>
+            <option value="hightolow">Price - High to Low</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div id="shopItems" class="shop-grid">
+        <!-- JavaScript will render plant cards here -->
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <footer>
+    <p>&copy; 2025 Bloom. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
