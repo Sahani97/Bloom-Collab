@@ -1,0 +1,106 @@
+:root {
+    --green-main: #7B9C66;
+    --green-accent: #5D704D;
+    --green-muted: #A1B48A;
+    --green-blob: #C9DBC5;
+    --text-dark: #3C3C3C;
+    --bg-main: #F8F9F5;
+    --bg-card: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.08);
+  }
+
+ 
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+    text-align: left;
+  }
+  
+  .contact-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+  
+  .contact-info {
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.2rem;
+    color: var(--green-accent);
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  
+  .contact-info ul li {
+    margin-bottom: 6px;
+  }
+  
+  .contact-info a {
+    color: var(--green-main);
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form label {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-top: 6px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--green-muted);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-card);
+  }
+  
+  .contact-form button {
+    background-color: var(--green-main);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--green-accent);
+  }
+  

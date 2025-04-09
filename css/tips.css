@@ -2,7 +2,7 @@
 body{
     background-image: url("../assets/images/background.plants.png");
     background-repeat: no-repeat;
-    background-position: center top 120px; /* pushes image down by 80px */
+    background-position: center top 120px;
 }
 
 .modal-overlay {

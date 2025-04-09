@@ -20,6 +20,20 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
   
   html {
     scroll-behavior: smooth;
@@ -58,9 +72,15 @@
     margin: 0 auto;
     padding: 0;
   }
+
+  .scroll-container {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
   
   /* 4. Navbar */
   header {
+    height: 120px;
     position: sticky;
     top: 0;
     z-index: 10;

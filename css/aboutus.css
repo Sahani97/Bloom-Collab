@@ -1,0 +1,137 @@
+:root {
+    --green-main: #7B9C66;
+    --green-accent: #5D704D;
+    --green-muted: #A1B48A;
+    --green-blob: #C9DBC5;
+    --text-dark: #3C3C3C;
+    --bg-main: #F8F9F5;
+    --bg-card: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.08);
+  }
+  
+  body {
+    background-color: var(--bg-main);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page Container */
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 80px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .hero-section img {
+    max-width: 100%;
+    width: 500px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px var(--shadow);
+  }  
+  
+  .hero-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--text-dark);
+  }
+  
+  /* Section Headings */
+  .about-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--green-accent);
+    margin-bottom: 16px;
+  }
+  
+  /* Intro Text */
+  .intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  
+  /* Story Section Layout */
+  .story {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .story .text {
+    flex: 1 1 55%;
+  }
+  
+  .story .text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  
+  .story .image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .story .image.wide img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+
+  .story .image.wide {
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Mission Section */
+  .mission p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .mission p:last-child {
+    font-weight: 600;
+    color: var(--green-main);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+  
+    .story {
+      flex-direction: column;
+    }
+  
+    .hero-section img {
+      max-width: 200px;
+    }
+  
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
